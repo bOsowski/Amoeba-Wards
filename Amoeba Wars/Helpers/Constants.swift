@@ -33,14 +33,7 @@ struct Layer
     static let ButtonSelected: CGFloat = 3
     static let Button: CGFloat = 3
     static let Coin: CGFloat = 2
-    static let FowleriLeft: CGFloat = 2
-    static let FowleriRight: CGFloat = 2
-    static let HistolyticaLeft: CGFloat = 2
-    static let HistolyticaRight: CGFloat = 2
-    static let LaserLeft: CGFloat = 2
-    static let LaserRight: CGFloat = 2
-    static let ProteusLeft: CGFloat = 2
-    static let ProteusRight: CGFloat = 2
+    static let Amoeba: CGFloat = 2
     static let HUD: CGFloat = 4
 }
 

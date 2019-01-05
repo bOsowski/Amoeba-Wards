@@ -92,7 +92,7 @@ class GameScene: SKScene {
         
         
         // Add base right
-        let baseRight = Base(imageName: ImageName.BaseRightDefense, team: .teamLeft)
+        let baseRight = Base(imageName: ImageName.BaseRightAttack, team: .teamRight)
         if let spriteComponent = baseRight.component(ofType: SpriteComponent.self)
         {
             spriteComponent.node.position = CGPoint(x: proteusButton.position.x - (spriteComponent.node.size.width/2) + (margin * 4), y: size.height/2)
@@ -116,11 +116,30 @@ class GameScene: SKScene {
         
     }
     
-    override func update(_ currentTime: TimeInterval) { }
+    override func update(_ currentTime: TimeInterval) {
+        let deltaTime = currentTime - lastUpdateTimeInterval
+        lastUpdateTimeInterval = currentTime
+        
+        entityManager.update(deltaTime)
+        
+        // update player left coins
+        if let playerLeft = entityManager.base(for: .teamLeft),
+            let playerLeftBase = playerLeft.component(ofType: BaseComponent.self) {
+            coinLeftLabel.text = "\(playerLeftBase.coins)"
+        }
+        
+        // update player right coins
+        if let playerRight = entityManager.base(for: .teamRight),
+            let playerRightBase = playerRight.component(ofType: BaseComponent.self)
+        {
+            coinRightLabel.text = "\(playerRightBase.coins)"
+        }
+    }
     
     //MARK: - Button methods
     func histolyticaPressed() {
         print("Histolytica pressed!")
+        entityManager.spawnHistolytica(team: .teamLeft)
     }
     
     func fowleriPressed() {
