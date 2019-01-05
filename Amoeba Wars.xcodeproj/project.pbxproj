@@ -15,6 +15,27 @@
 		0CAC24BD21DFCD3D00397141 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CAC24BB21DFCD3D00397141 /* Main.storyboard */; };
 		0CAC24BF21DFCD3E00397141 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CAC24BE21DFCD3E00397141 /* Assets.xcassets */; };
 		0CAC24C221DFCD3E00397141 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CAC24C021DFCD3E00397141 /* LaunchScreen.storyboard */; };
+		0CAC24CE21DFCE3300397141 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAC24CD21DFCE3300397141 /* Constants.swift */; };
+		0CAC24DC21DFCEBE00397141 /* lionlaugh4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0CAC24D021DFCEBE00397141 /* lionlaugh4.wav */; };
+		0CAC24DD21DFCEBE00397141 /* pew2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0CAC24D121DFCEBE00397141 /* pew2.wav */; };
+		0CAC24DE21DFCEBE00397141 /* mass.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0CAC24D221DFCEBE00397141 /* mass.wav */; };
+		0CAC24DF21DFCEBE00397141 /* smallHit.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0CAC24D321DFCEBE00397141 /* smallHit.wav */; };
+		0CAC24E021DFCEBE00397141 /* defend.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0CAC24D421DFCEBE00397141 /* defend.wav */; };
+		0CAC24E121DFCEBE00397141 /* boom.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0CAC24D521DFCEBE00397141 /* boom.wav */; };
+		0CAC24E221DFCEBE00397141 /* pew.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0CAC24D621DFCEBE00397141 /* pew.wav */; };
+		0CAC24E321DFCEBE00397141 /* lioncry3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0CAC24D721DFCEBE00397141 /* lioncry3.wav */; };
+		0CAC24E421DFCEBE00397141 /* spawn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0CAC24D821DFCEBE00397141 /* spawn.wav */; };
+		0CAC24E521DFCEBE00397141 /* bigHit.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0CAC24D921DFCEBE00397141 /* bigHit.wav */; };
+		0CAC24E621DFCEBE00397141 /* Latin_Industries.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0CAC24DA21DFCEBE00397141 /* Latin_Industries.mp3 */; };
+		0CAC24E721DFCEBE00397141 /* attack.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0CAC24DB21DFCEBE00397141 /* attack.wav */; };
+		0CAC24E921E06D1A00397141 /* MyMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAC24E821E06D1A00397141 /* MyMath.swift */; };
+		0CAC24EB21E06D3400397141 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAC24EA21E06D3400397141 /* SoundManager.swift */; };
+		0CAC24ED21E06D6D00397141 /* ButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAC24EC21E06D6D00397141 /* ButtonNode.swift */; };
+		0CAC24EF21E0721600397141 /* BaseComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAC24EE21E0721600397141 /* BaseComponent.swift */; };
+		0CAC24F121E0756100397141 /* SpriteComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAC24F021E0756100397141 /* SpriteComponent.swift */; };
+		0CAC24F321E075A200397141 /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAC24F221E075A200397141 /* Base.swift */; };
+		0CAC24F521E075C500397141 /* EntityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAC24F421E075C500397141 /* EntityManager.swift */; };
+		0CAC24F721E0789200397141 /* TeamComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAC24F621E0789200397141 /* TeamComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +49,27 @@
 		0CAC24BE21DFCD3E00397141 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0CAC24C121DFCD3E00397141 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0CAC24C321DFCD3E00397141 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CAC24CD21DFCE3300397141 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0CAC24D021DFCEBE00397141 /* lionlaugh4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lionlaugh4.wav; sourceTree = "<group>"; };
+		0CAC24D121DFCEBE00397141 /* pew2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pew2.wav; sourceTree = "<group>"; };
+		0CAC24D221DFCEBE00397141 /* mass.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = mass.wav; sourceTree = "<group>"; };
+		0CAC24D321DFCEBE00397141 /* smallHit.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = smallHit.wav; sourceTree = "<group>"; };
+		0CAC24D421DFCEBE00397141 /* defend.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = defend.wav; sourceTree = "<group>"; };
+		0CAC24D521DFCEBE00397141 /* boom.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = boom.wav; sourceTree = "<group>"; };
+		0CAC24D621DFCEBE00397141 /* pew.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pew.wav; sourceTree = "<group>"; };
+		0CAC24D721DFCEBE00397141 /* lioncry3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lioncry3.wav; sourceTree = "<group>"; };
+		0CAC24D821DFCEBE00397141 /* spawn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = spawn.wav; sourceTree = "<group>"; };
+		0CAC24D921DFCEBE00397141 /* bigHit.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bigHit.wav; sourceTree = "<group>"; };
+		0CAC24DA21DFCEBE00397141 /* Latin_Industries.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Latin_Industries.mp3; sourceTree = "<group>"; };
+		0CAC24DB21DFCEBE00397141 /* attack.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = attack.wav; sourceTree = "<group>"; };
+		0CAC24E821E06D1A00397141 /* MyMath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMath.swift; sourceTree = "<group>"; };
+		0CAC24EA21E06D3400397141 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		0CAC24EC21E06D6D00397141 /* ButtonNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonNode.swift; sourceTree = "<group>"; };
+		0CAC24EE21E0721600397141 /* BaseComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseComponent.swift; sourceTree = "<group>"; };
+		0CAC24F021E0756100397141 /* SpriteComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteComponent.swift; sourceTree = "<group>"; };
+		0CAC24F221E075A200397141 /* Base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base.swift; sourceTree = "<group>"; };
+		0CAC24F421E075C500397141 /* EntityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityManager.swift; sourceTree = "<group>"; };
+		0CAC24F621E0789200397141 /* TeamComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +104,12 @@
 			children = (
 				0CAC24B121DFCD3D00397141 /* AppDelegate.swift */,
 				0CAC24B321DFCD3D00397141 /* GameScene.sks */,
+				0CAC24CA21DFCDD900397141 /* Components */,
 				0CAC24B521DFCD3D00397141 /* Actions.sks */,
+				0CAC24CC21DFCDE500397141 /* Sounds */,
+				0CAC24CB21DFCDDE00397141 /* Entities */,
 				0CAC24B721DFCD3D00397141 /* GameScene.swift */,
+				0CAC24C921DFCDCB00397141 /* Helpers */,
 				0CAC24B921DFCD3D00397141 /* GameViewController.swift */,
 				0CAC24BB21DFCD3D00397141 /* Main.storyboard */,
 				0CAC24BE21DFCD3E00397141 /* Assets.xcassets */,
@@ -71,6 +117,63 @@
 				0CAC24C321DFCD3E00397141 /* Info.plist */,
 			);
 			path = "Amoeba Wars";
+			sourceTree = "<group>";
+		};
+		0CAC24C921DFCDCB00397141 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0CAC24CD21DFCE3300397141 /* Constants.swift */,
+				0CAC24EC21E06D6D00397141 /* ButtonNode.swift */,
+				0CAC24EA21E06D3400397141 /* SoundManager.swift */,
+				0CAC24E821E06D1A00397141 /* MyMath.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		0CAC24CA21DFCDD900397141 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				0CAC24EE21E0721600397141 /* BaseComponent.swift */,
+				0CAC24F021E0756100397141 /* SpriteComponent.swift */,
+				0CAC24F621E0789200397141 /* TeamComponent.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		0CAC24CB21DFCDDE00397141 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				0CAC24F221E075A200397141 /* Base.swift */,
+				0CAC24F421E075C500397141 /* EntityManager.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		0CAC24CC21DFCDE500397141 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				0CAC24CF21DFCEBE00397141 /* audio */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		0CAC24CF21DFCEBE00397141 /* audio */ = {
+			isa = PBXGroup;
+			children = (
+				0CAC24D021DFCEBE00397141 /* lionlaugh4.wav */,
+				0CAC24D121DFCEBE00397141 /* pew2.wav */,
+				0CAC24D221DFCEBE00397141 /* mass.wav */,
+				0CAC24D321DFCEBE00397141 /* smallHit.wav */,
+				0CAC24D421DFCEBE00397141 /* defend.wav */,
+				0CAC24D521DFCEBE00397141 /* boom.wav */,
+				0CAC24D621DFCEBE00397141 /* pew.wav */,
+				0CAC24D721DFCEBE00397141 /* lioncry3.wav */,
+				0CAC24D821DFCEBE00397141 /* spawn.wav */,
+				0CAC24D921DFCEBE00397141 /* bigHit.wav */,
+				0CAC24DA21DFCEBE00397141 /* Latin_Industries.mp3 */,
+				0CAC24DB21DFCEBE00397141 /* attack.wav */,
+			);
+			path = audio;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,10 +234,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CAC24DE21DFCEBE00397141 /* mass.wav in Resources */,
 				0CAC24BD21DFCD3D00397141 /* Main.storyboard in Resources */,
+				0CAC24DC21DFCEBE00397141 /* lionlaugh4.wav in Resources */,
+				0CAC24E621DFCEBE00397141 /* Latin_Industries.mp3 in Resources */,
+				0CAC24E221DFCEBE00397141 /* pew.wav in Resources */,
+				0CAC24E421DFCEBE00397141 /* spawn.wav in Resources */,
+				0CAC24E121DFCEBE00397141 /* boom.wav in Resources */,
 				0CAC24B421DFCD3D00397141 /* GameScene.sks in Resources */,
 				0CAC24BF21DFCD3E00397141 /* Assets.xcassets in Resources */,
+				0CAC24E321DFCEBE00397141 /* lioncry3.wav in Resources */,
+				0CAC24DD21DFCEBE00397141 /* pew2.wav in Resources */,
+				0CAC24E721DFCEBE00397141 /* attack.wav in Resources */,
 				0CAC24C221DFCD3E00397141 /* LaunchScreen.storyboard in Resources */,
+				0CAC24DF21DFCEBE00397141 /* smallHit.wav in Resources */,
+				0CAC24E021DFCEBE00397141 /* defend.wav in Resources */,
+				0CAC24E521DFCEBE00397141 /* bigHit.wav in Resources */,
 				0CAC24B621DFCD3D00397141 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,9 +261,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CAC24F721E0789200397141 /* TeamComponent.swift in Sources */,
+				0CAC24F521E075C500397141 /* EntityManager.swift in Sources */,
 				0CAC24B821DFCD3D00397141 /* GameScene.swift in Sources */,
 				0CAC24BA21DFCD3D00397141 /* GameViewController.swift in Sources */,
+				0CAC24F321E075A200397141 /* Base.swift in Sources */,
+				0CAC24E921E06D1A00397141 /* MyMath.swift in Sources */,
 				0CAC24B221DFCD3D00397141 /* AppDelegate.swift in Sources */,
+				0CAC24EF21E0721600397141 /* BaseComponent.swift in Sources */,
+				0CAC24CE21DFCE3300397141 /* Constants.swift in Sources */,
+				0CAC24EB21E06D3400397141 /* SoundManager.swift in Sources */,
+				0CAC24F121E0756100397141 /* SpriteComponent.swift in Sources */,
+				0CAC24ED21E06D6D00397141 /* ButtonNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,7 +428,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bosowski.Amoeba-Wars";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -322,7 +446,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bosowski.Amoeba-Wars";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
