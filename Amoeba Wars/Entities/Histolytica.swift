@@ -1,15 +1,11 @@
 import SpriteKit
 import GameplayKit
 
-class Histolytica: GKEntity {
+class Histolytica: Amoeba {
     
-    init(team: Team) {
-        super.init()
-        let imageName = team.rawValue=="Left" ? ImageName.HistolyticaLeft : ImageName.HistolyticaRight;
-        let texture = SKTexture(imageNamed: imageName)
-        let spriteComponent = SpriteComponent(texture: texture)
-        addComponent(spriteComponent)
-        addComponent(TeamComponent(team: team))
+    init(team: Team, entityManager: EntityManager) {
+        super.init(team: team, entityManager: entityManager, maxSpeed: 150, maxAcceleration: 5, imageName: team.rawValue=="Left" ? ImageName.HistolyticaLeft : ImageName.HistolyticaRight)
+        addComponent(HealthComponent(health: 1, delegate: self, entityManager: entityManager))
     }
     
     required init?(coder aDecoder: NSCoder) {

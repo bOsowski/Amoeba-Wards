@@ -83,7 +83,7 @@ class GameScene: SKScene {
         self.addChild(coinRightLabel)
         
         // Add base left
-        let baseLeft = Base(imageName: ImageName.BaseLeftAttack, team: .teamLeft)
+        let baseLeft = Base(imageName: ImageName.BaseLeftAttack, team: .teamLeft, entityManager: entityManager)
         if let spriteComponent = baseLeft.component(ofType: SpriteComponent.self)
         {
             spriteComponent.node.position = CGPoint(x: histolyticaButton.position.x + (spriteComponent.node.size.width/2) - (margin*4), y: size.height/2)
@@ -92,12 +92,33 @@ class GameScene: SKScene {
         
         
         // Add base right
-        let baseRight = Base(imageName: ImageName.BaseRightAttack, team: .teamRight)
+        let baseRight = Base(imageName: ImageName.BaseRightAttack, team: .teamRight, entityManager: entityManager)
+        baseRight.addComponent(AIComponent(entityManager: entityManager))
         if let spriteComponent = baseRight.component(ofType: SpriteComponent.self)
         {
             spriteComponent.node.position = CGPoint(x: proteusButton.position.x - (spriteComponent.node.size.width/2) + (margin * 4), y: size.height/2)
         }
         entityManager.add(baseRight)
+    }
+    
+    override func update(_ currentTime: TimeInterval) {
+        let deltaTime = currentTime - lastUpdateTimeInterval
+        lastUpdateTimeInterval = currentTime
+
+        entityManager.update(deltaTime)
+
+        // update player left coins
+        if let playerLeft = entityManager.base(for: .teamLeft),
+            let playerLeftBase = playerLeft.component(ofType: BaseComponent.self) {
+            coinLeftLabel.text = "\(playerLeftBase.coins)"
+        }
+
+        // update player right coins
+        if let playerRight = entityManager.base(for: .teamRight),
+            let playerRightBase = playerRight.component(ofType: BaseComponent.self)
+        {
+            coinRightLabel.text = "\(playerRightBase.coins)"
+        }
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -113,27 +134,6 @@ class GameScene: SKScene {
             view?.presentScene(newScene, transition: SKTransition.flipHorizontal(withDuration: 0.5))
             return
         }
-        
-    }
-    
-    override func update(_ currentTime: TimeInterval) {
-        let deltaTime = currentTime - lastUpdateTimeInterval
-        lastUpdateTimeInterval = currentTime
-        
-        entityManager.update(deltaTime)
-        
-        // update player left coins
-        if let playerLeft = entityManager.base(for: .teamLeft),
-            let playerLeftBase = playerLeft.component(ofType: BaseComponent.self) {
-            coinLeftLabel.text = "\(playerLeftBase.coins)"
-        }
-        
-        // update player right coins
-        if let playerRight = entityManager.base(for: .teamRight),
-            let playerRightBase = playerRight.component(ofType: BaseComponent.self)
-        {
-            coinRightLabel.text = "\(playerRightBase.coins)"
-        }
     }
     
     //MARK: - Button methods
@@ -144,9 +144,11 @@ class GameScene: SKScene {
     
     func fowleriPressed() {
         print("Fowleri pressed!")
+        entityManager.spawnFowleri(team: .teamLeft)
     }
     
     func proteusPressed() {
         print("Proteus pressed!")
+        entityManager.spawnProteus(team: .teamLeft)
     }
 }
