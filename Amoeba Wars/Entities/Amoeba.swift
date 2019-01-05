@@ -11,6 +11,7 @@ class Amoeba: GKEntity {
         addComponent(TeamComponent(team: team))
         addComponent(MoveComponent(maxSpeed: maxSpeed, maxAcceleration: maxAcceleration, radius: Float(texture.size().width * 0.3), entityManager: entityManager))
         addComponent(CollisionComponent(entityManager: entityManager))
+        addComponent(LaserComponent(delegate: self, entityManager: entityManager))
     }
     
     required init?(coder aDecoder: NSCoder) {

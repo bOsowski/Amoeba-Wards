@@ -9,7 +9,9 @@ class EntityManager {
         let aiSystem = GKComponentSystem(componentClass: AIComponent.self)
         let healthSystem = GKComponentSystem(componentClass: HealthComponent.self)
         let collisionSystem = GKComponentSystem(componentClass: CollisionComponent.self)
-        return [baseSystem, moveSystem, aiSystem, healthSystem, collisionSystem]
+        let laserSystem = GKComponentSystem(componentClass: LaserComponent.self)
+        let timedDeathSystem = GKComponentSystem(componentClass: TimedDeathComponent.self)
+        return [baseSystem, moveSystem, aiSystem, healthSystem, collisionSystem, laserSystem, timedDeathSystem]
     }()
     
     // 1

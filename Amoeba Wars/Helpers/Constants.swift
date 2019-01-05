@@ -25,7 +25,7 @@ struct ImageName
 
 struct Layer
 {
-    static let Background: CGFloat = 0
+    static let Background: CGFloat = -1
     static let BaseLeftAttack: CGFloat = 1
     static let BaseLeftDefense: CGFloat = 1
     static let BaseRightAttack: CGFloat = 1

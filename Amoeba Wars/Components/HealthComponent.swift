@@ -3,11 +3,11 @@ import GameplayKit
 
 class HealthComponent : GKComponent {
     
-    var maxHealth: Int
+    var maxHealth: Float
     var entityManager: EntityManager
     var delegate: GKEntity
     
-    var currentHealth: Int {
+    var currentHealth: Float {
         didSet {
             if currentHealth > maxHealth {
                 currentHealth = maxHealth
@@ -19,7 +19,7 @@ class HealthComponent : GKComponent {
         }
     }
     
-    init(health: Int, delegate: GKEntity, entityManager: EntityManager) {
+    init(health: Float, delegate: GKEntity, entityManager: EntityManager) {
         self.maxHealth = health
         self.currentHealth = health
         self.entityManager = entityManager
@@ -27,7 +27,7 @@ class HealthComponent : GKComponent {
         super.init()
     }
     
-    func takeDamage(damage: Int) {
+    func takeDamage(damage: Float) {
         currentHealth -= damage
     }
     

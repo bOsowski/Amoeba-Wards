@@ -45,6 +45,9 @@
 		0CAC250521E07EC000397141 /* HealthComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAC250421E07EC000397141 /* HealthComponent.swift */; };
 		0CAC250921E11C6000397141 /* Amoeba.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAC250821E11C6000397141 /* Amoeba.swift */; };
 		0CAC250B21E12EB300397141 /* CollisionComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAC250A21E12EB300397141 /* CollisionComponent.swift */; };
+		0CAC250D21E139EA00397141 /* LaserComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAC250C21E139EA00397141 /* LaserComponent.swift */; };
+		0CAC250F21E13D1100397141 /* Laser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAC250E21E13D1100397141 /* Laser.swift */; };
+		0CAC251121E1465900397141 /* TimedDeathComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAC251021E1465900397141 /* TimedDeathComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +91,9 @@
 		0CAC250421E07EC000397141 /* HealthComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthComponent.swift; sourceTree = "<group>"; };
 		0CAC250821E11C6000397141 /* Amoeba.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Amoeba.swift; sourceTree = "<group>"; };
 		0CAC250A21E12EB300397141 /* CollisionComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollisionComponent.swift; sourceTree = "<group>"; };
+		0CAC250C21E139EA00397141 /* LaserComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaserComponent.swift; sourceTree = "<group>"; };
+		0CAC250E21E13D1100397141 /* Laser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Laser.swift; sourceTree = "<group>"; };
+		0CAC251021E1465900397141 /* TimedDeathComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimedDeathComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,7 +164,9 @@
 				0CAC24F621E0789200397141 /* TeamComponent.swift */,
 				0CAC250221E07DD100397141 /* AIComponent.swift */,
 				0CAC250421E07EC000397141 /* HealthComponent.swift */,
+				0CAC251021E1465900397141 /* TimedDeathComponent.swift */,
 				0CAC24FA21E07B9600397141 /* MoveBehavior.swift */,
+				0CAC250C21E139EA00397141 /* LaserComponent.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -170,6 +178,7 @@
 				0CAC24F421E075C500397141 /* EntityManager.swift */,
 				0CAC24F821E07A6500397141 /* Histolytica.swift */,
 				0CAC24FE21E07D1B00397141 /* Fowleri.swift */,
+				0CAC250E21E13D1100397141 /* Laser.swift */,
 				0CAC250821E11C6000397141 /* Amoeba.swift */,
 				0CAC250021E07D3E00397141 /* Proteus.swift */,
 			);
@@ -301,8 +310,11 @@
 				0CAC24F321E075A200397141 /* Base.swift in Sources */,
 				0CAC24E921E06D1A00397141 /* MyMath.swift in Sources */,
 				0CAC24B221DFCD3D00397141 /* AppDelegate.swift in Sources */,
+				0CAC250F21E13D1100397141 /* Laser.swift in Sources */,
 				0CAC24EF21E0721600397141 /* BaseComponent.swift in Sources */,
 				0CAC24CE21DFCE3300397141 /* Constants.swift in Sources */,
+				0CAC251121E1465900397141 /* TimedDeathComponent.swift in Sources */,
+				0CAC250D21E139EA00397141 /* LaserComponent.swift in Sources */,
 				0CAC24EB21E06D3400397141 /* SoundManager.swift in Sources */,
 				0CAC24FD21E07BB600397141 /* MoveComponent.swift in Sources */,
 				0CAC24F121E0756100397141 /* SpriteComponent.swift in Sources */,
